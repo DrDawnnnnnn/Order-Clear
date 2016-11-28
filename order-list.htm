@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="order-css.css">
+    <script type="text/javascript">
+        function show_confirm()
+        {
+            var r=confirm("确定清空浏览记录?");
+                if (r==true)
+            {
+                document.getElementById('main').innerHTML='';//show的display属性设置为none（隐藏）
+            }
+        }
+    </script>
+</head>
+<body>
+ <div class="container">
+    <div class="top">
+        <img class="back" src="返回.png">
+        <p class="name">浏览记录</p>
+        <p class="clear" onclick="show_confirm()">清空</p>
+    </div>
+
+     <HR align=center width=100% color=#e2e2e2 SIZE=1>
+
+    <div class="main" id="main">
+        <div class="list1">
+            <p class="list-img"></p>
+
+            <div class="pro-info">
+                <p align="center" class="info-title">安卡城堡酒庄奎斯特干红2012</p>
+                <p class="info-describe">Castell d'Encus Quest 750ml</p>
+                <p class="info-price">￥150</p>
+            </div>
+            <HR align=center width=100% color=#e2e2e2 SIZE=1>
+        </div>
+
+        <div class="list2">
+            <p class="list-img"></p>
+
+            <div class="pro-info">
+                <p class="info-title">安卡城堡酒庄奎斯特干红2012</p>
+                <p class="info-describe">Castell d'Encus Quest 750ml</p>
+                <p class="info-price">￥150</p>
+            </div>
+            <HR align=center width=100% color=#e2e2e2 SIZE=1>
+        </div>
+    </div>
+
+     <div class="">
+
+     </div>
+ </div>
+</body>
+</html>
